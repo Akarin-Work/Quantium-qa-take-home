@@ -68,7 +68,12 @@ Each `cases/NN-*.ts` file exports a single async function that takes a `page` an
 
 ## Running it
 
+**Prerequisites:** Node.js 22 or later, and npm.
+
 ```bash
+git clone https://github.com/Akarin-Work/Quantium-qa-take-home.git
+cd Quantium-qa-take-home
+
 npm install
 npx playwright install chromium
 
@@ -79,6 +84,10 @@ npx playwright install chromium
 
 npm test                # run everything
 npm run test:headed     # same, with the browser visible
-npx playwright test -g "06-Progress_Bar"   # run a single assignment
+npx playwright test -g "Progress Bar"   # run a single assignment
 npm run test:report     # open the HTML report after a run
 ```
+
+## Continuous Integration
+
+Every push to `main` also runs the full suite on GitHub Actions (see `.github/workflows/playwright.yml`), so results aren't just "it works on my machine" — they're reproducible on a clean environment. Check the **Actions** tab of this repository for the latest run.
