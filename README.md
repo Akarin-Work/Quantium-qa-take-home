@@ -11,7 +11,6 @@ UI test automation for the 14 Quantium QA assignments, written in TypeScript wit
 | Total assignments | 14 |
 | ✅ Passed | 14 |
 | ❌ Failed | 0 |
-| Minimum required to pass | 7 / 14 |
 | Total execution time | 3m 36s |
 
 ### Results by assignment
